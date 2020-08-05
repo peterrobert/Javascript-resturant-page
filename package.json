@@ -1,0 +1,23 @@
+{
+  "name": "javascript-resturant-page",
+  "version": "1.0.0",
+  "description": "This is a project for creating a resturant page using javascript modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterrobert/Javascript-resturant-page.git"
+  },
+  "author": "Peter robert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterrobert/Javascript-resturant-page/issues"
+  },
+  "homepage": "https://github.com/peterrobert/Javascript-resturant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
