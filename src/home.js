@@ -2,6 +2,29 @@ import { Navigation } from "./navigation.js";
 
 class HomeDisplay {
 
+    static homeDetails(){
+        let contents = document.querySelector('.content');
+        console.log(contents);
+
+        let details = document.createElement('div');
+        details.setAttribute('class','home_details');
+
+        let welcomeHeader = document.createElement('h2');
+        welcomeHeader.innerHTML = "Welcome to";
+        details.append(welcomeHeader);
+
+        let ownerHeader = document.createElement('h1');
+        ownerHeader.innerHTML = 'food fest hotel';
+        details.append(ownerHeader);
+
+        let storeMotto =  document.createElement('h3');
+        storeMotto.innerHTML = "experience the difference";
+        details.append(storeMotto);
+
+        contents.append(details);
+
+    }
+
     static homePage() {
         //  attributes for video and source tags
         const videoAtt = [{
@@ -42,8 +65,11 @@ class HomeDisplay {
         sourceAtt.forEach(settingAttSource);
         videoTag.appendChild(sourceTag)
 
-        // menu and details
+        // menu
         Navigation.appNavigation();
+
+        // page details
+        this.homeDetails();
     };
 
 };
