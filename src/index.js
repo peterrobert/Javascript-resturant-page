@@ -1,1 +1,1 @@
-document.getElementById('content').append("its working");
+import { HomeDisplay } from "./home.js";

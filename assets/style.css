@@ -1,0 +1,69 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    min-height: 100%;
+  }
+
+  .menu_bar{
+      margin: auto;
+  }
+
+  .menu_bar nav{
+    justify-content: center;
+      display: flex;
+      flex-wrap: nowrap;
+  }
+
+  .menu_bar nav li {
+      list-style: none;
+      padding: 20px;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: white;
+      padding: 15px;
+
+  }
+
+  .home_details{
+      text-align: center;
+      margin-top: 110px;
+  }
+
+  .home_details h2{
+    font-family: Courgette;
+    font-size: 60px;
+    line-height: 1.1;
+    color: white
+  }
+
+  .home_details  h1{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+  }
+
+  .home_details h3{
+    font-family: Courgette;
+    font-size: 40px;
+    line-height: 1.1;
+    color: white
+  }
