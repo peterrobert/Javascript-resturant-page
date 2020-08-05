@@ -1,3 +1,5 @@
+import { Navigation } from "./navigation.js";
+
 class HomeDisplay {
 
     static homePage() {
@@ -40,18 +42,9 @@ class HomeDisplay {
         sourceAtt.forEach(settingAttSource);
         videoTag.appendChild(sourceTag)
 
+        // menu and details
+        Navigation.appNavigation();
     };
-
-
-    static homeDetails() {
-        let navigation = ["home", "menu", "contacts"];
-
-        let container = document.getElementById('content');
-
-
-    };
-
-
 
 };
 
