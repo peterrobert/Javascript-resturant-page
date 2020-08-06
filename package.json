@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/peterrobert/Javascript-resturant-page#readme",
   "devDependencies": {
+    "eslint": "^7.6.0",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
     "webpack": "^4.44.1",

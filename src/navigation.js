@@ -2,7 +2,7 @@ import { Menu } from "./menu.js";
 import { Contact } from "./contact.js";
 import { HomeDisplay } from "./home.js";
 
-
+let $;
 class Navigation {
   
   static appNavigation() {
@@ -28,18 +28,18 @@ class Navigation {
     contents.append(menu_bar);
     container.appendChild(contents);
 
-    document.getElementById("home").addEventListener("click", (ev) => {
+    document.getElementById("home").addEventListener("click", () => {
       $(".home_details").remove();
       HomeDisplay.homeDetails();
     });
 
-    document.getElementById("menu").addEventListener("click", (ev) => {
+    document.getElementById("menu").addEventListener("click", () => {
       $(".home_details").remove();
 
       Menu.displayMenu();
     });
 
-    document.getElementById("contacts").addEventListener("click", (ev) => {
+    document.getElementById("contacts").addEventListener("click", () => {
         $(".home_details").remove();
   
         Contact.displayContact();

@@ -49,7 +49,7 @@ class Menu {
 
     }
 
-};
+}
 
 export {
     Menu

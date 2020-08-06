@@ -40,9 +40,9 @@ class Contact {
       details.innerHTML = pageStructure;
 
       container.append(details);
-    };
+    }
 
   
-};
+}
 
 export{Contact}

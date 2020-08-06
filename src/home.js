@@ -71,9 +71,9 @@ class HomeDisplay {
 
         // page details
         this.homeDetails();
-    };
+    }
 
-};
+}
 
 export {
     HomeDisplay
