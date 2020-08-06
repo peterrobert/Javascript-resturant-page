@@ -1,5 +1,5 @@
 import { Menu } from "./menu.js";
-
+import {  Contact } from "./contact.js";
 import { HomeDisplay } from "./home.js";
 
 class Navigation {
@@ -36,6 +36,13 @@ class Navigation {
       ev.preventDefault();
 
       Menu.displayMenu();
+    });
+
+    document.getElementById("contacts").addEventListener("click", (ev) => {
+        $(".home_details").empty();
+        ev.preventDefault();
+  
+        Contact.displayContact();
     });
   }
 }
