@@ -67,3 +67,15 @@
     line-height: 1.1;
     color: white
   }
+
+  #home{
+    cursor: pointer;
+  }
+
+  #menu{
+    cursor: pointer;
+  }
+
+  #contacts{
+    cursor: pointer;
+  }

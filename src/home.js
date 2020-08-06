@@ -4,8 +4,7 @@ class HomeDisplay {
 
     static homeDetails(){
         let contents = document.querySelector('.content');
-        console.log(contents);
-
+       
         let details = document.createElement('div');
         details.setAttribute('class','home_details');
 
