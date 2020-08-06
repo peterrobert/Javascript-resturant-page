@@ -2,11 +2,11 @@
 
 > The aim of this project is to create a resturant page only with javascript modules. The modules will be compiled by webpack.
 
-![screenshot](image/2.png);
+![screenshot](assets/image/2.png);
 
-![screenshot](image/3.png)
+![screenshot](assets/image/3.png)
 
-![screenshot](image/4.png)
+![screenshot](assets/image/4.png)
 
 
 ## Built With
