@@ -1,8 +1,10 @@
 import { Menu } from "./menu.js";
-import {  Contact } from "./contact.js";
+import { Contact } from "./contact.js";
 import { HomeDisplay } from "./home.js";
 
+
 class Navigation {
+  
   static appNavigation() {
     let navigation = ["home", "menu", "contacts"];
     let container = document.getElementById("content");
@@ -27,20 +29,18 @@ class Navigation {
     container.appendChild(contents);
 
     document.getElementById("home").addEventListener("click", (ev) => {
-      $("#contents").remove();
+      $(".home_details").remove();
       HomeDisplay.homeDetails();
     });
 
     document.getElementById("menu").addEventListener("click", (ev) => {
-      $(".home_details").empty();
-      ev.preventDefault();
+      $(".home_details").remove();
 
       Menu.displayMenu();
     });
 
     document.getElementById("contacts").addEventListener("click", (ev) => {
-        $(".home_details").empty();
-        ev.preventDefault();
+        $(".home_details").remove();
   
         Contact.displayContact();
     });

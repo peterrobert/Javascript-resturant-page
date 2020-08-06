@@ -1,3 +1,3 @@
 import { HomeDisplay } from "./home.js";
-
-HomeDisplay.homePage()
+window.onload = function(){HomeDisplay.homePage()};
+ 

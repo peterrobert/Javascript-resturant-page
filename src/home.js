@@ -7,6 +7,7 @@ class HomeDisplay {
        
         let details = document.createElement('div');
         details.setAttribute('class','home_details');
+        
 
         let welcomeHeader = document.createElement('h2');
         welcomeHeader.innerHTML = "Welcome to";
@@ -35,6 +36,7 @@ class HomeDisplay {
         }, {
             'id': "myVideo"
         }];
+        
         const sourceAtt = [{
             'src': '../assets/images/video.mp4'
         }, {
