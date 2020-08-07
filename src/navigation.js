@@ -2,7 +2,6 @@ import { Menu } from "./menu.js";
 import { Contact } from "./contact.js";
 import { HomeDisplay } from "./home.js";
 
-let $;
 class Navigation {
   
   static appNavigation() {
