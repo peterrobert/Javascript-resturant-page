@@ -1,28 +1,28 @@
 class Contact {
   static displayContact() {
+    let container = document.getElementById("content");
 
-    let container = document.getElementById('content');
-
-    let details = document.createElement('div');
-    details.setAttribute('class', 'home_details');
-    details.setAttribute('id', 'contact_details');
-
+    let details = document.createElement("div");
+    details.setAttribute("class", "home_details");
+    details.setAttribute("id", "contact_details");
 
     let pageStructure = () => {
       // bootstrap container
-      let bootStrapContainer = document.createElement('div');
-      bootStrapContainer.setAttribute('class', 'container form_input_container');
+      let bootStrapContainer = document.createElement("div");
+      bootStrapContainer.setAttribute(
+        "class",
+        "container form_input_container"
+      );
 
-      // title 
+      // title
       let contactTitle = document.createElement("div");
-      contactTitle.setAttribute('class', 'title_details');
+      contactTitle.setAttribute("class", "title_details");
 
-      let titleH2 = document.createElement('h2');
+      let titleH2 = document.createElement("h2");
       titleH2.innerText = "Contact Us";
 
-      let titleP = document.createElement('p');
-      titleP.innerText = 'Swing by for a meal, or leave us a message:'
-
+      let titleP = document.createElement("p");
+      titleP.innerText = "Swing by for a meal, or leave us a message:";
 
       //  created the title
       contactTitle.append(titleH2);
@@ -34,104 +34,116 @@ class Contact {
 
       let CreateForm = () => {
         //  row container
-        let bootStrapRow = document.createElement('div');
-        bootStrapRow.setAttribute('class', 'row');
-        bootStrapRow.setAttribute('id', 'form_input');
+        let bootStrapRow = document.createElement("div");
+        bootStrapRow.setAttribute("class", "row");
+        bootStrapRow.setAttribute("id", "form_input");
 
-        let column1 = document.createElement('div');
-        column1.setAttribute('class', 'column');
+        let column1 = document.createElement("div");
+        column1.setAttribute("class", "column");
 
-        let Img = document.createElement('img');
-        Img.setAttribute('src', '../assets/images/7.jpg');
-        Img.setAttribute('style', 'width:100%');
+        let Img = document.createElement("img");
+        Img.setAttribute("src", "../assets/images/7.jpg");
+        Img.setAttribute("style", "width:100%");
 
         // image column
         column1.append(Img);
         bootStrapRow.append(column1);
 
         // form column
-        let column2 = document.createElement('div');
-        column2.setAttribute('class', 'column');
+        let column2 = document.createElement("div");
+        column2.setAttribute("class", "column");
 
-        let Form = document.createElement('form');
-        Form.setAttribute('action','#');
+        let Form = document.createElement("form");
+        Form.setAttribute("action", "#");
 
         let FormGenerator = () => {
-
           // === setting attributes helper function ====
           function setAttributes(el, attrs) {
-
-            for(var key in attrs) {
-
+            for (var key in attrs) {
               el.setAttribute(key, attrs[key]);
-
             }
           }
-      
-           
-          let label1 = document.createElement('label');
-          setAttributes(label1,{'for': 'fname'});
 
-          let input1 = document.createElement('input');
-          setAttributes(input1, {"src": "http://example.com/something.jpeg", "height": "100%"});
+          let label1 = document.createElement("label");
+          label1.innerText = "first name";
+          setAttributes(label1, {
+            for: "fname",
+          });
+          let input1 = document.createElement("input");
+          setAttributes(input1, {
+            type: "text",
+            id: "fname",
+            name: "firstname",
+            placeholder: "your name ...",
+          });
 
-        console.log(input1);
+          let label2 = document.createElement("label");
+          label2.innerText = "last name";
+          setAttributes(label2, {
+            for: "lname",
+          });
+          let input2 = document.createElement("input");
+          setAttributes(input2, {
+            type: "text",
+            id: "lname",
+            name: "lastname",
+            placeholder: "your last name",
+          });
+
+          let label3 = document.createElement("label");
+          label3.innerText = "subject";
+          setAttributes(label3, {
+            for: "subject",
+          });
+
+          let input3 = document.createElement("textarea");
+          setAttributes(input3, {
+            type: "text",
+            id: "subject",
+            name: "subject",
+            placeholder: "subject",
+            style: "height:170px",
+          });
+
+          let input4 = document.createElement("input");
+          setAttributes(input4, {
+            type: "submit",
+            value: "submit",
+          });
+
+          return {
+            label1,
+            input1,
+            label2,
+            input2,
+            label3,
+            input3,
+            input4,
+          };
+        };
+
+        const { ...rest } = FormGenerator();
+
+        let values = Object.values(rest);
+        for (const v of values) {
+          Form.append(v);
         }
 
-        Form.append(FormGenerator());
+        column2.append(Form);
+        bootStrapRow.append(column2);
 
-
-      //  return the Row
         return bootStrapRow;
-      }
-
-
-
-
+      };
 
       bootStrapContainer.appendChild(CreateForm());
 
-      return bootStrapContainer
-    }
-
-
-    `<div class="container form_input_container">
-        <div style="text-align:center">
-          <h2>Contact Us</h2>
-          <p>Swing by for a meal, or leave us a message:</p>
-        </div>
-        <div class="row" id ="form_input">
-          <div class="column">
-            <img src="../assets/images/7.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <form action="#">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-        </div>
-      </div>`
+      return bootStrapContainer;
+    };
 
     details.append(pageStructure());
 
     container.append(details);
   }
-
-
 }
 
-export {
-  Contact
-}
+export { Contact };
