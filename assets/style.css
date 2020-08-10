@@ -198,3 +198,7 @@ label {
 #form_input {
   top: unset;
 }
+
+.title_details{
+  text-align:center;
+}
