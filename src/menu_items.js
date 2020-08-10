@@ -1,63 +1,53 @@
 class MenuItems {
+  static showItems() {
+    let items = {
+      menuList: [
+        {
+          Name: "Italian breakFirst",
+          price: 185,
+          image: "../assets/images/1.jpg",
+        },
+        {
+          Name: "Desert",
+          price: 200,
+          image: "../assets/images/2.jpg",
+        },
+        {
+          Name: "lunch meal",
+          price: 150,
+          image: "../assets/images/4.jpg",
+        },
+        {
+          Name: "Chinese meal",
+          price: 400,
+          image: "../assets/images/5.jpg",
+        },
+        {
+          Name: "Chinese meal",
+          price: 400,
+          image: "../assets/images/5.jpg",
+        },
 
- static  showItems(){
+        {
+          Name: "Chinese meal",
+          price: 400,
+          image: "../assets/images/5.jpg",
+        },
+        {
+          Name: "Chinese meal",
+          price: 400,
+          image: "../assets/images/5.jpg",
+        },
+        {
+          Name: "Chinese meal",
+          price: 400,
+          image: "../assets/images/5.jpg",
+        },
+      ],
+    };
 
-       let items = {
-            "menuList": [
-    
-                {
-                    "Name": "Italian breakFirst",
-                    "price": 185,
-                    "image": "../assets/images/1.jpg"
-                },
-                {
-                    "Name": "Desert",
-                    "price": 200,
-                    "image": "../assets/images/2.jpg"
-                },
-                {
-                    "Name": "lunch meal",
-                    "price": 150,
-                    "image": "../assets/images/4.jpg"
-                },
-                {
-                    "Name": "Chinese meal",
-                    "price": 400,
-                    "image": "../assets/images/5.jpg"
-                },
-                {
-                    "Name": "Chinese meal",
-                    "price": 400,
-                    "image": "../assets/images/5.jpg"
-                },
-                
-                {
-                    "Name": "Chinese meal",
-                    "price": 400,
-                    "image": "../assets/images/5.jpg"
-                },
-                {
-                    "Name": "Chinese meal",
-                    "price": 400,
-                    "image": "../assets/images/5.jpg"
-                },
-                {
-                    "Name": "Chinese meal",
-                    "price": 400,
-                    "image": "../assets/images/5.jpg"
-                },
-               
-    
-            ]
-        }
-
-        return items;
-    }
-
-    
-
+    return items;
+  }
 }
 
-export {
-    MenuItems
-};
+export { MenuItems };

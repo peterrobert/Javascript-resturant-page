@@ -3,7 +3,6 @@ import { Contact } from "./contact.js";
 import { HomeDisplay } from "./home.js";
 
 class Navigation {
-  
   static appNavigation() {
     let navigation = ["home", "menu", "contacts"];
     let container = document.getElementById("content");
@@ -39,9 +38,9 @@ class Navigation {
     });
 
     document.getElementById("contacts").addEventListener("click", () => {
-        $(".home_details").remove();
-  
-        Contact.displayContact();
+      $(".home_details").remove();
+
+      Contact.displayContact();
     });
   }
 }
