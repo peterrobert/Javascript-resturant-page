@@ -1,0 +1,204 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(0.8);
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  min-height: 100%;
+}
+
+.menu_bar {
+  margin: auto;
+}
+
+.menu_bar nav {
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.menu_bar nav li {
+  list-style: none;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.home_details {
+  text-align: center;
+  margin-top: 11%;
+}
+
+.home_details h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  line-height: 1.1;
+  color: white;
+}
+
+.home_details h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
+
+.home_details h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 40px;
+  line-height: 1.1;
+  color: white;
+}
+
+#home {
+  cursor: pointer;
+}
+
+#menu {
+  cursor: pointer;
+}
+
+#contacts {
+  cursor: pointer;
+}
+
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+.card h1 {
+  color: #000;
+}
+
+.price {
+  color: #000;
+  font-size: 22px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.home_details .row {
+  position: relative;
+  top: 120px;
+}
+
+.home_details .card img {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.home_details .card h1 {
+  font-family: unset;
+  color: #000;
+  font-size: unset;
+  line-height: unset;
+  font-weight: unset;
+  text-transform: unset;
+  letter-spacing: unset;
+  word-spacing: unset;
+}
+
+#menu_details {
+  margin-top: unset;
+}
+
+#contact_details {
+  margin-top: unset;
+  position: relative;
+  top: 90px;
+}
+
+/* contact page styles */
+
+/* Style inputs */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.form_input_container {
+  border-radius: 5px;
+  background-color: green;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+  color: #fff;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#form_input {
+  top: unset;
+}
+
+.title_details {
+  text-align: center;
+}

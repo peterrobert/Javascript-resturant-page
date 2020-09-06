@@ -1,0 +1,37 @@
+{
+  "name": "javascript-resturant-page",
+  "version": "1.0.0",
+  "description": "This is a project for creating a resturant page using javascript modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterrobert/Javascript-resturant-page.git"
+  },
+  "author": "Peter robert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterrobert/Javascript-resturant-page/issues"
+  },
+  "homepage": "https://github.com/peterrobert/Javascript-resturant-page#readme",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
