@@ -1,4 +1,5 @@
-import { HomeDisplay } from "./home.js";
-window.onload = function () {
+import { HomeDisplay } from './home';
+
+window.onload = () => {
   HomeDisplay.homePage();
 };

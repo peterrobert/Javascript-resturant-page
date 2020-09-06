@@ -1,22 +1,23 @@
-import { Menu } from "./menu.js";
-import { Contact } from "./contact.js";
-import { HomeDisplay } from "./home.js";
+/* eslint-disable  no-undef, no-plusplus, camelcase, import/no-cycle, import/prefer-default-export, no-plusplus, max-len */
+import { Menu } from './menu';
+import { Contact } from './contact';
+import { HomeDisplay } from './home';
 
 class Navigation {
   static appNavigation() {
-    let navigation = ["home", "menu", "contacts"];
-    let container = document.getElementById("content");
-    let contents = document.createElement("div");
-    contents.setAttribute("class", "content");
+    const navigation = ['home', 'menu', 'contacts'];
+    const container = document.getElementById('content');
+    const contents = document.createElement('div');
+    contents.setAttribute('class', 'content');
 
-    let menu_bar = document.createElement("div");
-    menu_bar.setAttribute("class", "menu_bar");
+    const menu_bar = document.createElement('div');
+    menu_bar.setAttribute('class', 'menu_bar');
 
-    let navBar = document.createElement("nav");
+    const navBar = document.createElement('nav');
 
     for (let i = 0; i < navigation.length; i++) {
-      let navLi = document.createElement("li");
-      navLi.setAttribute("id", navigation[i]);
+      const navLi = document.createElement('li');
+      navLi.setAttribute('id', navigation[i]);
 
       navLi.innerHTML = navigation[i];
       navBar.append(navLi);
@@ -26,19 +27,19 @@ class Navigation {
     contents.append(menu_bar);
     container.appendChild(contents);
 
-    document.getElementById("home").addEventListener("click", () => {
-      $(".home_details").remove();
+    document.getElementById('home').addEventListener('click', () => {
+      $('.home_details').remove();
       HomeDisplay.homeDetails();
     });
 
-    document.getElementById("menu").addEventListener("click", () => {
-      $(".home_details").remove();
+    document.getElementById('menu').addEventListener('click', () => {
+      $('.home_details').remove();
 
       Menu.displayMenu();
     });
 
-    document.getElementById("contacts").addEventListener("click", () => {
-      $(".home_details").remove();
+    document.getElementById('contacts').addEventListener('click', () => {
+      $('.home_details').remove();
 
       Contact.displayContact();
     });
@@ -46,3 +47,4 @@ class Navigation {
 }
 
 export { Navigation };
+/* eslint-enable  no-undef, no-plusplus, camelcase, import/no-cycle */

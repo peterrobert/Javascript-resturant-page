@@ -1,58 +1,58 @@
-import { MenuItems } from "./menu_items";
+/* eslint-disable  no-undef, no-plusplus, camelcase, guard-for-in, no-restricted-syntax, import/no-cycle, import/prefer-default-export, no-plusplus, max-len */
+import { MenuItems } from './menu_items';
 
 class Menu {
   static displayMenu() {
-    let list = MenuItems.showItems();
-    let listArr = list.menuList;
+    const list = MenuItems.showItems();
+    const listArr = list.menuList;
 
-    let container = document.getElementById("content");
+    const container = document.getElementById('content');
 
-    let details = document.createElement("div");
-    details.setAttribute("class", "home_details");
-    details.setAttribute("id", "menu_details");
+    const details = document.createElement('div');
+    details.setAttribute('class', 'home_details');
+    details.setAttribute('id', 'menu_details');
 
     // creating the html structure.
 
-    let mainDiv = document.createElement("div");
-    mainDiv.setAttribute("class", "container");
+    const mainDiv = document.createElement('div');
+    mainDiv.setAttribute('class', 'container');
 
-    let secondaryDiv = document.createElement("div");
-    secondaryDiv.setAttribute("class", "row");
+    const secondaryDiv = document.createElement('div');
+    secondaryDiv.setAttribute('class', 'row');
 
     function setAttributes(el, attrs) {
-      for (var key in attrs) {
+      for (const key in attrs) {
         el.setAttribute(key, attrs[key]);
       }
     }
 
     for (let i = 0; i < listArr.length; i++) {
-      let thirdDiv = document.createElement("div");
+      const thirdDiv = document.createElement('div');
       setAttributes(thirdDiv, {
-        class: "col-md-3",
+        class: 'col-md-3',
       });
-      console.log(thirdDiv);
 
-      let card = document.createElement("div");
+      const card = document.createElement('div');
       setAttributes(card, {
-        class: "card",
+        class: 'card',
       });
 
-      let cardImg = document.createElement("img");
+      const cardImg = document.createElement('img');
       setAttributes(cardImg, {
         src: `${list.menuList[i].image}`,
         alt: `${list.menuList[i].Name}`,
-        styles: "width:100%",
+        styles: 'width:100%',
       });
 
       card.append(cardImg);
 
-      let cardH1 = document.createElement("h1");
+      const cardH1 = document.createElement('h1');
       cardH1.innerHTML = `${list.menuList[i].Name}`;
       card.append(cardH1);
 
-      let cardP = document.createElement("p");
+      const cardP = document.createElement('p');
       setAttributes(cardP, {
-        class: "price",
+        class: 'price',
       });
       cardP.innerText = `${list.menuList[i].price}`;
       card.append(cardP);
